@@ -12,7 +12,7 @@ interface LoginData {
   selector: 'app-login',
   imports: [FormsModule, CommonModule],
   templateUrl: './login.html',
-  styleUrl: './login.css'
+  styleUrl: '../../app.css'
 })
 export class Login {
   loginData: LoginData = {
@@ -26,7 +26,7 @@ export class Login {
       console.log('Login attempt:', this.loginData);
       // Here you would typically call an authentication service
       // For now, just log the data
-      alert(`Login attempt with email: ${this.loginData.email}`);
+      alert('Login attempt with email: ${this.loginData.email}');
     }
   }
 
